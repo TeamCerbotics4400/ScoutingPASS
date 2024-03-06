@@ -76,6 +76,11 @@ var config_data = `
     { "name": "Speaker Scores",
       "code": "ass",
       "type": "counter"
+    },
+    {
+      "name": "Cross Half the Field",
+      "code": "ash",
+      "type": "bool"
     }
   ],
   "teleop": [
@@ -87,10 +92,20 @@ var config_data = `
       "code": "tss",
       "type": "counter"
     },
+    {
+      "name": "Notes Missed",
+      "code": "tnm",
+      "type": "counter"
+    },
     { "name": "Times Amplified",
       "code": "tta",
       "type": "counter"
     },
+    {
+      "name": "Notes Feeded to Another Robot",
+      "code": "tnf",
+      "type": "counter"
+    }
     { "name": "Pickup From",
       "code": "tpu",
       "type": "radio",
@@ -138,6 +153,18 @@ var config_data = `
       },
       "defaultValue": "x"
     },
+    {
+      "name": "Shoot Close to Subwoofer",
+      "code": "scs",
+      "type": "radio",
+      "choices": {
+        "c": "Close",
+        "p": "Away",
+        "b": "Both",
+        "n": "Not Shoot"
+      },
+      "defaultValue": "n"
+    },
     { "name": "Defense Rating",
       "code": "dr",
       "type": "radio",
@@ -149,6 +176,11 @@ var config_data = `
         "x": "Did not play defense"
       },
       "defaultValue": "x"
+    },
+    {
+      "name": "Good Feeder",
+      "code": "gf",
+      "type" "bool"
     },
     { "name": "Speed Rating",
       "code": "sr",
@@ -172,6 +204,11 @@ var config_data = `
     },
     { "name": "Dropped Notes (>2)",
       "code": "dn",
+      "type": "bool"
+    },
+    {
+      "name": "Cards?",
+      "code": "cr",
       "type": "bool"
     },
     { "name": "Make good<br>alliance partner?",
