@@ -105,7 +105,7 @@ var config_data = `
       "name": "Notes Feeded to Another Robot",
       "code": "tnf",
       "type": "counter"
-    }
+    },
     { "name": "Pickup From",
       "code": "tpu",
       "type": "radio",
