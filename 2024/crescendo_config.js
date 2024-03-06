@@ -180,7 +180,7 @@ var config_data = `
     {
       "name": "Good Feeder",
       "code": "gf",
-      "type" "bool"
+      "type": "bool"
     },
     { "name": "Speed Rating",
       "code": "sr",
