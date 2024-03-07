@@ -5,28 +5,29 @@ var config_data = `
   "page_title": "Crescendo",
   "checkboxAs": "10",
   "prematch": [
-    { "name": "Scouter Initials",
+    { "name": "Iniciales de Scouter",
       "code": "s",
       "type": "scouter",
       "size": 5,
       "maxSize": 5,
       "required": "true"
     },
-    { "name": "Event",
+    { "name": "Evento",
       "code": "e",
       "type": "event",
       "defaultValue": "2023tnkn",
       "required": "true"
     },
-    { "name": "Match Level",
+    { "name": "Tipo de Match",
       "code": "l",
       "type": "level",
       "choices": {
+        "pm": "Practica",
         "qm": "Quals<br>",
-        "sf": "Semifinals<br>",
-        "f": "Finals"
+        "sf": "Semifinales<br>",
+        "f": "Finales"
       },
-      "defaultValue": "qm",
+      "defaultValue": "pm",
       "required": "true"
     },
     { "name": "Match #",
@@ -40,12 +41,12 @@ var config_data = `
       "code": "r",
       "type": "robot",
       "choices": {
-        "r1": "Red-1",
-        "b1": "Blue-1<br>",
-        "r2": "Red-2",
-        "b2": "Blue-2<br>",
-        "r3": "Red-3",
-        "b3": "Blue-3"
+        "r1": "Rojo-1",
+        "b1": "Azul-1<br>",
+        "r2": "Rojo-2",
+        "b2": "Azul-2<br>",
+        "r3": "Rojo-3",
+        "b3": "Azul-3"
       },
       "required":"true"
     },
@@ -55,7 +56,7 @@ var config_data = `
       "min": 1,
       "max": 99999
     },
-    { "name": "Auto Start Position",
+    { "name": "Posicion inicial del Robot",
       "code": "as",
       "type": "clickable_image",
       "filename": "2024/field_image.png",
@@ -65,65 +66,65 @@ var config_data = `
     }
   ],
   "auton": [
-    { "name": "Leave Starting Zone",
+    { "name": "Sale de la Zona Inicial",
       "code": "al",
       "type": "bool"
     },
-    { "name": "Amp Scores",
+    { "name": "Notas en Amp",
       "code": "aas",
       "type": "counter"
     },
-    { "name": "Speaker Scores",
+    { "name": "Notas en Speaker",
       "code": "ass",
       "type": "counter"
     },
     {
-      "name": "Cross Half the Field",
+      "name": "Cruzo la Mitad de la Cancha",
       "code": "ash",
       "type": "bool"
     }
   ],
   "teleop": [
-    { "name": "Amp Scores",
+    { "name": "Notas en Amp",
       "code": "tas",
       "type": "counter"
     },
-    { "name": "Speaker Scores",
+    { "name": "Notas en Speaker",
       "code": "tss",
       "type": "counter"
     },
     {
-      "name": "Notes Missed",
+      "name": "Notas Falladas",
       "code": "tnm",
       "type": "counter"
     },
-    { "name": "Times Amplified",
+    { "name": "Veces Amplificado",
       "code": "tta",
       "type": "counter"
     },
     {
-      "name": "Notes Feeded to Another Robot",
+      "name": "Notas Feeded a otro Robot",
       "code": "tnf",
       "type": "counter"
     },
-    { "name": "Pickup From",
+    { "name": "De donde agarra",
       "code": "tpu",
       "type": "radio",
       "choices": {
         "s": "Source<br>",
-        "f": "Floor<br>",
-        "b": "Both<br>",
-        "x": "Not Attempted"
+        "f": "Suelo<br>",
+        "b": "Ambas<br>",
+        "x": "No intento"
       },
       "defaultValue": "x"
     }
   ],
   "endgame": [
-    { "name": "Stage Timer",
+    { "name": "Tiempo de Escalado",
       "code": "dt",
       "type": "timer"
     },
-    { "name": "Final Status",
+    { "name": "Posicion Finalizada",
       "code": "fs",
       "type":"radio",
       "choices": {
@@ -131,92 +132,92 @@ var config_data = `
         "o": "Onstage<br>",
         "s": "Onstage (Spotlit)<br>",
         "h": "Harmony<br>",
-        "a": "Attempted but failed<br>",
-        "x": "Not attempted"
+        "a": "Intento pero Fallo<br>",
+        "x": "No intento"
       },
       "defaultValue": "x"
     },
-    { "name": "Note in Trap",
+    { "name": "Note en Trap",
       "code": "nit",
       "type": "bool"
     }
   ],
   "postmatch": [
-    { "name": "Driver Skill",
+    { "name": "Habilidad de Driver",
       "code": "ds",
       "type": "radio",
       "choices": {
-        "n": "Not Effective<br>",
-        "a": "Average<br>",
-        "v": "Very Effective<br>",
-        "x": "Not Observed"
+        "n": "No Effectivo<br>",
+        "a": "Promedio<br>",
+        "v": "Bastante Efectivo<br>",
+        "x": "No Observado"
       },
       "defaultValue": "x"
     },
     {
-      "name": "Shoot Close to Subwoofer",
+      "name": "Lugar de Disparo",
       "code": "scs",
       "type": "radio",
       "choices": {
-        "c": "Close",
-        "p": "Away",
-        "b": "Both",
-        "n": "Not Attempted"
+        "c": "Pegado al Subwoofer<br>",
+        "p": "Alejado al subwoofer<br>",
+        "b": "Ambas<br>",
+        "n": "No intento"
       },
       "defaultValue": "n"
     },
-    { "name": "Defense Rating",
+    { "name": "Nivel de Defensa",
       "code": "dr",
       "type": "radio",
       "choices": {
-        "b": "Below Average<br>",
-        "a": "Average<br>",
-        "g": "Good<br>",
-        "e": "Excellent<br>",
-        "x": "Did not play defense"
+        "b": "Debajo del promedio<br>",
+        "a": "Promedio<br>",
+        "g": "Promedio<br>",
+        "e": "Excelente<br>",
+        "x": "No jugo defensa"
       },
       "defaultValue": "x"
     },
     {
-      "name": "Good Feeder",
+      "name": "Es buen feeder?",
       "code": "gf",
       "type": "bool"
     },
-    { "name": "Speed Rating",
+    { "name": "Velocidad",
       "code": "sr",
       "type": "radio",
       "choices": {
-        "1": "1 (slow)<br>",
+        "1": "1 (lento)<br>",
         "2": "2<br>",
         "3": "3<br>",
         "4": "4<br>",
-        "5": "5 (fast)"
+        "5": "5 (rapido)"
       },
       "defaultValue":"3"
     },
-    { "name": "Died/Immobilized",
+    { "name": "Murio/Inmobilizado",
       "code": "die",
       "type": "bool"
     },
-    { "name": "Tippy<br>(almost tipped over)",
+    { "name": "Casi se cae",
       "code": "tip",
       "type": "bool"
     },
-    { "name": "Dropped Notes (>2)",
+    { "name": "Notas que se le cayeron (>2)",
       "code": "dn",
       "type": "bool"
     },
     {
-      "name": "Cards?",
+      "name": "Tarjetas?",
       "code": "c",
       "type": "bool"
     },
-    { "name": "Make good<br>alliance partner?",
-      "tooltip": "Would you want this robot on your alliance in eliminations?",
+    { "name": "Hace un buen<br>compañero de alianza?",
+      "tooltip": "Te gustaria tener a este robot en las eliminatorias?",
       "code": "all",
       "type": "bool"
     },
-    { "name": "Comments",
+    { "name": "Comentarios",
       "code": "co",
       "type": "text",
       "size": 15,
