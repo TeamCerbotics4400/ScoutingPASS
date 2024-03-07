@@ -66,7 +66,7 @@ var config_data = `
     }
   ],
   "auton": [
-    { "name": "Sale de la Zona Inicial",
+    { "name": "Sale de la Zona<br>inicial",
       "code": "al",
       "type": "bool"
     },
@@ -79,7 +79,7 @@ var config_data = `
       "type": "counter"
     },
     {
-      "name": "Cruzo la Mitad de la Cancha",
+      "name": "Cruzo la Mitad<br>de la Cancha",
       "code": "ash",
       "type": "bool"
     }
@@ -103,7 +103,7 @@ var config_data = `
       "type": "counter"
     },
     {
-      "name": "Notas Feeded a otro Robot",
+      "name": "Notas Feeded<br>a otro Robot",
       "code": "tnf",
       "type": "counter"
     },
