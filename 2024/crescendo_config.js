@@ -161,7 +161,7 @@ var config_data = `
         "c": "Close",
         "p": "Away",
         "b": "Both",
-        "n": "Not Shoot"
+        "n": "Not Attempted"
       },
       "defaultValue": "n"
     },
@@ -208,7 +208,7 @@ var config_data = `
     },
     {
       "name": "Cards?",
-      "code": "cr",
+      "code": "c",
       "type": "bool"
     },
     { "name": "Make good<br>alliance partner?",

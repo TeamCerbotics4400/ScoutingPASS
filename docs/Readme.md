@@ -2,6 +2,6 @@
 
 ## [Configuration Documentation](Configuration.md)
 
-## [How to use Google Sheets with ScoutingPASS](GoogleSheets.md)
+## [How to configure Google Sheets](GoogleSheets.md)
 
 ## [Excel examples and VBA code](../docs)
