@@ -203,7 +203,7 @@ var config_data = `
       "code": "tip",
       "type": "bool"
     },
-    { "name": "Notas que se le cayeron (>2)",
+    { "name": "Notas que se le<br>cayeron (>2)",
       "code": "dn",
       "type": "bool"
     },
