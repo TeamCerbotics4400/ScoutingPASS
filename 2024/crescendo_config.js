@@ -30,14 +30,14 @@ var config_data = `
       "defaultValue": "pm",
       "required": "true"
     },
-    { "name": "Match #",
+    { "name": "# Match",
       "code": "m",
       "type": "match",
       "min": 1,
       "max": 150,
       "required": "true"
     },
-    { "name": "Robot",
+    { "name": "Alianza",
       "code": "r",
       "type": "robot",
       "choices": {
@@ -50,7 +50,7 @@ var config_data = `
       },
       "required":"true"
     },
-    { "name": "Team #",
+    { "name": "# Equipo",
       "code": "t",
       "type": "team",
       "min": 1,
@@ -172,7 +172,7 @@ var config_data = `
       "choices": {
         "b": "Debajo del promedio<br>",
         "a": "Promedio<br>",
-        "g": "Promedio<br>",
+        "g": "Bueno<br>",
         "e": "Excelente<br>",
         "x": "No jugo defensa"
       },
