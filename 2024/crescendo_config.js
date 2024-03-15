@@ -170,10 +170,10 @@ var config_data = `
       "code": "dr",
       "type": "radio",
       "choices": {
-        "b": "Debajo del promedio<br>",
-        "a": "Promedio<br>",
-        "g": "Bueno<br>",
-        "e": "Excelente<br>",
+        "0": "Debajo del promedio<br>",
+        "1": "Promedio<br>",
+        "2": "Bueno<br>",
+        "3": "Excelente<br>",
         "x": "No jugo defensa"
       },
       "defaultValue": "x"
