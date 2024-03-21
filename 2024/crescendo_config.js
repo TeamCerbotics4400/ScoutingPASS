@@ -221,7 +221,7 @@ var config_data = `
       "name": "Lo escojerias de<br>segundo pick?
       "code": "pk",
       "type": "bool"
-    }
+    },
     { "name": "Hace un buen<br>compañero de alianza?",
       "tooltip": "Te gustaria tener a este robot en las eliminatorias?",
       "code": "all",
