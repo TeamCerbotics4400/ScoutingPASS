@@ -212,6 +212,16 @@ var config_data = `
       "code": "c",
       "type": "bool"
     },
+    {
+      "name": "Funciona bien<br>el swerve?
+      "code": "sw",
+      "type": bool"
+    },
+    {
+      "name": "Lo escojerias de<br>segundo pick?
+      "code": "pk",
+      "type": "bool"
+    }
     { "name": "Hace un buen<br>compañero de alianza?",
       "tooltip": "Te gustaria tener a este robot en las eliminatorias?",
       "code": "all",
