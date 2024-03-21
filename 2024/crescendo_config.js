@@ -15,7 +15,7 @@ var config_data = `
     { "name": "Evento",
       "code": "e",
       "type": "event",
-      "defaultValue": "2024mslr",
+      "defaultValue": "2024mxto",
       "required": "true"
     },
     { "name": "Tipo de Match",
@@ -210,6 +210,16 @@ var config_data = `
     {
       "name": "Tarjetas?",
       "code": "c",
+      "type": "bool"
+    },
+    {
+      "name": "Funciona bien<br>el swerve?",
+      "code": "sw",
+      "type": "bool"
+    },
+    {
+      "name": "Lo escogerias de<br>segundo pick?",
+      "code": "pk",
       "type": "bool"
     },
     { "name": "Hace un buen<br>compañero de alianza?",
