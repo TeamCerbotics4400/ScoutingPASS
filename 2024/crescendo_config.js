@@ -79,6 +79,11 @@ var config_data = `
       "type": "counter"
     },
     {
+      "name": "Notas Falladas",
+      "code": "af",
+      "type": "counter"
+    },
+    {
       "name": "Cruzo la Mitad<br>de la Cancha",
       "code": "ash",
       "type": "bool"
