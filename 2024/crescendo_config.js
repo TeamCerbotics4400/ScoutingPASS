@@ -15,7 +15,7 @@ var config_data = `
     { "name": "Evento",
       "code": "e",
       "type": "event",
-      "defaultValue": "2024mxto",
+      "defaultValue": "2024cmptx",
       "required": "true"
     },
     { "name": "Tipo de Match",
