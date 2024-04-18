@@ -243,7 +243,7 @@ var config_data = `
       "type": "score",
       "min": 1,
       "max": 999
-    }
+    },
     { "name": "Comentarios",
       "code": "co",
       "type": "text",
