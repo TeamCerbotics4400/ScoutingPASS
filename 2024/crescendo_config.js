@@ -5,7 +5,7 @@ var config_data = `
   "page_title": "Crescendo",
   "checkboxAs": "10",
   "prematch": [
-    { "name": "Iniciales de Scouter",
+    { "name": "Iniciales de Scouter", 
       "code": "s",
       "type": "scouter",
       "size": 5,
@@ -15,7 +15,7 @@ var config_data = `
     { "name": "Evento",
       "code": "e",
       "type": "event",
-      "defaultValue": "2024cmptx",
+      "defaultValue": "2024mil",
       "required": "true"
     },
     { "name": "Tipo de Match",
