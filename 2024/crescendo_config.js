@@ -240,9 +240,9 @@ var config_data = `
     {
       "name": "Puntuacion final",
       "code": "fs",
-      "type": "score",
-      "min": 1,
-      "max": 999
+      "type": "text"
+      "size": 2,
+      "maxSize": 5
     },
     { "name": "Comentarios",
       "code": "co",
