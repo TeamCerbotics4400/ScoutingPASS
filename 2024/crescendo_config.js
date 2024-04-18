@@ -112,6 +112,11 @@ var config_data = `
       "code": "tnf",
       "type": "counter"
     },
+    {
+      "name": "Notas que lanza<br>fuera de la cancha",
+      "code": "nol",
+      "type": "counter"
+    },
     { "name": "De donde agarra",
       "code": "tpu",
       "type": "radio",
