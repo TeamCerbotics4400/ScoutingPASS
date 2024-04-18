@@ -237,13 +237,6 @@ var config_data = `
       "code": "all",
       "type": "bool"
     },
-    {
-      "name": "Puntuacion final",
-      "code": "fs",
-      "type": "text"
-      "size": 2,
-      "maxSize": 5
-    },
     { "name": "Comentarios",
       "code": "co",
       "type": "text",
